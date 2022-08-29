@@ -21,7 +21,7 @@ const Chart = () => {
   // );
 
   const ChartData = {
-    labels: name ,
+    labels: name,
     datasets: [
       {
         label: "# of Votes",
@@ -34,9 +34,12 @@ const Chart = () => {
     ],
   };
 
+  console.log(fetchData.length);
+  
   return (
     <div className="mt-10 w-[520px]">
-      <Doughnut data={ChartData} />
+      <h1 className="topic">Wykres</h1>
+      { fetchData.length ? <Doughnut data={ChartData} /> : <h1>Brak Danych, <br/> Wprowadź dane</h1>}
     </div>
   );
 };
