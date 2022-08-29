@@ -52,7 +52,7 @@ const Modal: FC<Props> = ({ onClose }) => {
           />
         </div>
         <div className="modalInputWrapper">
-          <p className="modalText">Aktualna nazwa kanału</p>
+          <p className="modalText">Aktualna Ilość</p>
           <p className="modalText">
             {" "}
             {actualModal ? actualModal.number : "Brak danych"}

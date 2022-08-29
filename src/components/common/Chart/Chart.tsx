@@ -13,14 +13,12 @@ const Chart = () => {
     (v: PropsDataStatics) => v.backgroundColor
   );
 
-
-  const borderColor = fetchData.map((v: PropsDataStatics) => v.borderColor);
-  const toNumbers = fetchData.map((v: PropsDataStatics) => Number(v.number));
-  const hardMath = toNumbers.reduce((a: number, b: number) => a + b, 0);
-  const hardMathTwo = toNumbers.map(
-    (v: number) => (v / hardMath).toFixed(2) + "%"
-  );
-
+  // const borderColor = fetchData.map((v: PropsDataStatics) => v.borderColor);
+  // const toNumbers = fetchData.map((v: PropsDataStatics) => Number(v.number));
+  // const hardMath = toNumbers.reduce((a: number, b: number) => a + b, 0);
+  // const hardMathTwo = toNumbers.map(
+  //   (v: number) => (v / hardMath).toFixed(2) + "%"
+  // );
 
   const ChartData = {
     labels: name ,
