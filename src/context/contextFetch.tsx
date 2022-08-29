@@ -7,11 +7,7 @@ import {
   useEffect,
 } from "react";
 
-export interface DataProps {
-  id?: number;
-  name?: string;
-  number?: number;
-}
+
 interface Props {
   children: ReactNode;
 }
@@ -27,17 +23,17 @@ const ApiProvider: FC<Props> = ({ children }) => {
   }, []);
 
   const getDataFromServer = async () => {
-    await fetch("https://my-json-server.typicode.com/bogkowit/mockjson/stats")
+    await fetch("http://localhost:3004/stats")
       .then((res) => res.json())
       .then(setFetchData);
   };
 
   const deleteItemFromData = async (e: number) => {
-    await fetch(`https://my-json-server.typicode.com/bogkowit/mockjson/stats/${e}`, { method: "DELETE" });
+    await fetch(`http://localhost:3004/stats/${e}`, { method: "DELETE" });
   };
 
-  const postItemToData = async (newObject: any) => {
-    await fetch("https://my-json-server.typicode.com/bogkowit/mockjson/stats/", {
+  const postItemToData = async (newObject:{}) => {
+    await fetch("http://localhost:3004/stats", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,12 +43,12 @@ const ApiProvider: FC<Props> = ({ children }) => {
   };
 
   const setModalById = async (e:number) => {
-    await fetch(`https://my-json-server.typicode.com/bogkowit/mockjson/stats/${e}`)
+    await fetch(`http://localhost:3004/stats/${e}`)
       .then((res) => res.json())
       .then(setActualModal);
   };
 
-  const value: any = {
+  const value = {
     fetchData,
     getDataFromServer,
     deleteItemFromData,

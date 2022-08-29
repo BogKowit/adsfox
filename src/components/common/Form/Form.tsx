@@ -1,13 +1,8 @@
-import { ChangeEvent, useState, FormEvent} from "react";
+import { ChangeEvent, useState, FormEvent } from "react";
 import { useAPI } from "../../../context/contextFetch";
+import { idUnique, randomRgbaGenerator } from "../../../utils/functions";
+import { defaultFormFields } from "../../../utils/FormFields";
 import "./Form.css";
-
-const idUnique = () => Math.random() * Date.now();
-
-const defaultFormFields = {
-  name: "",
-  number: "",
-};
 
 const Form = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
@@ -18,17 +13,21 @@ const Form = () => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value });
   };
 
-  const newObject = Object.assign(formFields, { id: idUnique() });
-  
+  const newObject = Object.assign(formFields, {
+    id: idUnique(),
+    backgroundColor: randomRgbaGenerator(0.8),
+    borderColor: randomRgbaGenerator(1),
+  });
+
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await postItemToData(newObject);
-    await getDataFromServer()
+    await getDataFromServer();
     setFormFields(defaultFormFields);
   };
 
   return (
-    <div className="w-80 mt-10">
+    <div className="mt-10 w-80">
       <h1 className="topic">Formularz</h1>
       <form className="form" onSubmit={sendMessage}>
         <div className="wrapInputForm group ">

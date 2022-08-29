@@ -1,24 +1,46 @@
 {
   "stats": [
     {
-      "name": "Dupa",
-      "number": "400",
-      "id": 535943256658.31274
+      "name": "Facebook",
+      "number": "225",
+      "id": 225910359231.7026,
+      "backgroundColor": "rgba(254,8,26, 0.5)",
+      "borderColor": "rgba(38,9,10, 1)"
     },
     {
-      "name": "333",
-      "number": "333",
-      "id": 698386927564.1427
+      "name": "Instagram",
+      "number": "15",
+      "id": 1333090898943.5903,
+      "backgroundColor": "rgba(134,1,211, 0.5)",
+      "borderColor": "rgba(91,214,170, 1)"
     },
     {
-      "name": "444",
-      "number": "444",
-      "id": 698386927565.1427
+      "name": "Twitter",
+      "number": "30",
+      "id": 1499807399639.1829,
+      "backgroundColor": "rgba(176,71,253, 0.5)",
+      "borderColor": "rgba(14,224,130, 1)"
     },
     {
-      "name": "323",
-      "number": "323",
-      "id": 509540747837.3154
+      "name": "LinkedIn",
+      "number": "45",
+      "id": 377096797225.29913,
+      "backgroundColor": "rgba(51,190,235, 0.5)",
+      "borderColor": "rgba(166,66,235, 1)"
+    },
+    {
+      "name": "Nasza-Klasa",
+      "number": "100",
+      "id": 1293266988573.0625,
+      "backgroundColor": "rgba(14,48,24, 0.5)",
+      "borderColor": "rgba(173,38,186, 1)"
+    },
+    {
+      "name": "Google",
+      "number": "300",
+      "id": 834336549572.4548,
+      "backgroundColor": "rgba(228,218,221, 0.8)",
+      "borderColor": "rgba(104,235,3, 1)"
     }
   ]
 }

@@ -1,10 +1,4 @@
-import {
-  createContext,
-  FC,
-  ReactNode,
-  useContext,
-  useReducer,
-} from "react";
+import { createContext, FC, ReactNode, useContext, useReducer } from "react";
 
 export interface StateModifiers {
   openSidebar: () => void;
@@ -57,10 +51,10 @@ export const UIProvider: FC<Props> = ({ children }) => {
   const closeSidebar = () => dispatch({ type: "CLOSE_SIDEBAR" });
 
   const value = {
-      ...state,
-      openSidebar,
-      closeSidebar,
-    };
+    ...state,
+    openSidebar,
+    closeSidebar,
+  };
 
   return <UIContext.Provider value={value}> {children} </UIContext.Provider>;
 };

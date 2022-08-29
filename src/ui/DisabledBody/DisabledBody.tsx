@@ -1,4 +1,4 @@
-import React, { FC, useRef, useEffect } from "react";
+import React, { ReactNode, FC, useRef, useEffect } from "react";
 import {
   disableBodyScroll,
   enableBodyScroll,
@@ -6,7 +6,7 @@ import {
 } from "body-scroll-lock";
 
 interface Props {
-  children: any;
+  children: ReactNode;
   isOpen: boolean;
   onClose: () => void;
 }

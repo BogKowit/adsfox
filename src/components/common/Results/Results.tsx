@@ -2,14 +2,11 @@ import "./Result.css";
 import { IoRemoveCircleOutline, IoPencil } from "react-icons/io5";
 import { useAPI } from "../../../context/contextFetch";
 import { UseUI } from "../../../context/context";
+import { PropsDataStatics } from "../../../utils/types"
 
-export interface PropsDataStatics {
-  name: string;
-  number: number;
-  id: number;
-}
 const Results = () => {
-  const { fetchData, deleteItemFromData, getDataFromServer, setModalById } = useAPI();
+  const { fetchData, deleteItemFromData, getDataFromServer, setModalById } =
+    useAPI();
   const { openSidebar } = UseUI();
 
   const handlerDeleteItem = async (id: number) => {
@@ -17,10 +14,9 @@ const Results = () => {
     await getDataFromServer();
   };
 
-  const handlerOpenModal = (id:number) => {
+  const handlerOpenModal = (id: number) => {
     openSidebar();
     setModalById(id);
-    
   };
 
   return (
@@ -46,7 +42,7 @@ const Results = () => {
               <p className=" column middleColumn">{number}</p>
               <div className="column iconColumn lastColumn ">
                 <button
-                  onClick={(e) => {
+                  onClick={() => {
                     handlerOpenModal(id);
                   }}
                 >

@@ -2,15 +2,11 @@ import { IoCloseSharp } from "react-icons/io5";
 import { ChangeEvent, useState, FormEvent, FC } from "react";
 import "./Modal.css";
 import { useAPI } from "../../../context/contextFetch";
+import { defaultFormFields } from "../../../utils/FormFields";
 
 interface Props {
   onClose: () => void;
 }
-
-const defaultFormFields = {
-  name: "",
-  number: "",
-};
 
 const Modal: FC<Props> = ({ onClose }) => {
   const [formFields, setFormFields] = useState(defaultFormFields);
@@ -18,7 +14,6 @@ const Modal: FC<Props> = ({ onClose }) => {
 
   const { actualModal, postItemToData, getDataFromServer, deleteItemFromData } =
     useAPI();
-  console.log(actualModal);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value });

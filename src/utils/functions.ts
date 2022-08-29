@@ -13,3 +13,4 @@
     );
   };
 
+export const idUnique = () => Math.random() * Date.now();
