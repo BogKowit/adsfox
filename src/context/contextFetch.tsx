@@ -27,17 +27,17 @@ const ApiProvider: FC<Props> = ({ children }) => {
   }, []);
 
   const getDataFromServer = async () => {
-    await fetch("http://localhost:3004/stats")
+    await fetch("https://my-json-server.typicode.com/bogkowit/mockjson/stats")
       .then((res) => res.json())
       .then(setFetchData);
   };
 
   const deleteItemFromData = async (e: number) => {
-    await fetch(`http://localhost:3004/stats/${e}`, { method: "DELETE" });
+    await fetch(`https://my-json-server.typicode.com/bogkowit/mockjson/stats/${e}`, { method: "DELETE" });
   };
 
   const postItemToData = async (newObject: any) => {
-    await fetch("http://localhost:3004/stats", {
+    await fetch("https://my-json-server.typicode.com/bogkowit/mockjson/stats/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const ApiProvider: FC<Props> = ({ children }) => {
   };
 
   const setModalById = async (e:number) => {
-    await fetch(`http://localhost:3004/stats/${e}`)
+    await fetch(`https://my-json-server.typicode.com/bogkowit/mockjson/stats/${e}`)
       .then((res) => res.json())
       .then(setActualModal);
   };
