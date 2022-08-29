@@ -1,0 +1,37 @@
+.result {
+  @apply mb-10;
+}
+.list {
+  @apply flex w-[520px]  flex-col rounded-2xl border border-gray-200 
+  bg-slate-50 shadow-lg shadow-gray-100;
+}
+
+.listitem {
+  @apply flex items-center justify-between border-b last:border-0;
+}
+
+.column {
+  @apply p-2 pl-6;
+}
+.firstColumn {
+  @apply w-5/12;
+}
+.numbeColumn {
+  @apply w-3/12 py-[6px];
+}
+
+.iconColumn {
+  @apply w-2/12  items-center justify-center  ;
+}
+
+.lastColumn {
+  @apply ml-0 flex;
+}
+
+.iconDelete {
+  @apply text-2xl  text-red-800 hover:text-black hover:duration-300;
+}
+
+.iconChange {
+  @apply text-2xl  text-yellow-600 hover:text-black hover:duration-300;
+}

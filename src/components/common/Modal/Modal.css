@@ -1,0 +1,26 @@
+.modalWrapper {
+  @apply relative h-96 w-80 bg-gray-200  border-2 border-gray-500 rounded-lg ;
+}
+
+.modalInputWrapper {
+  @apply flex flex-col mx-5 
+}
+
+.modalForm {
+  @apply flex flex-col;
+}
+
+.modalInput {
+  @apply w-40 bg-white p-2 rounded-md border border-slate-100 focus:outline-none mb-3
+}
+
+.modalLabel {
+  @apply font-normal
+}
+
+.modalText {
+  @apply text-sm m-[2px]
+}
+
+
+
