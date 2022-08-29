@@ -1,46 +1,39 @@
 {
   "stats": [
     {
+      "name": "Nasza-Klasa",
+      "number": "100",
+      "id": 1532423073865.1372,
+      "backgroundColor": "rgba(217,214,170, 0.8)",
+      "borderColor": "rgba(27,152,31, 1)"
+    },
+    {
       "name": "Facebook",
-      "number": "225",
-      "id": 225910359231.7026,
-      "backgroundColor": "rgba(254,8,26, 0.5)",
-      "borderColor": "rgba(38,9,10, 1)"
+      "number": "150",
+      "id": 955095162864.4388,
+      "backgroundColor": "rgba(202,69,190, 0.8)",
+      "borderColor": "rgba(131,110,183, 1)"
     },
     {
       "name": "Instagram",
-      "number": "15",
-      "id": 1333090898943.5903,
-      "backgroundColor": "rgba(134,1,211, 0.5)",
-      "borderColor": "rgba(91,214,170, 1)"
+      "number": "40",
+      "id": 1480873521194.0234,
+      "backgroundColor": "rgba(205,70,35, 0.8)",
+      "borderColor": "rgba(3,83,37, 1)"
     },
     {
-      "name": "Twitter",
-      "number": "30",
-      "id": 1499807399639.1829,
-      "backgroundColor": "rgba(176,71,253, 0.5)",
-      "borderColor": "rgba(14,224,130, 1)"
-    },
-    {
-      "name": "LinkedIn",
-      "number": "45",
-      "id": 377096797225.29913,
-      "backgroundColor": "rgba(51,190,235, 0.5)",
-      "borderColor": "rgba(166,66,235, 1)"
-    },
-    {
-      "name": "Nasza-Klasa",
+      "name": "GaduGadu",
       "number": "100",
-      "id": 1293266988573.0625,
-      "backgroundColor": "rgba(14,48,24, 0.5)",
-      "borderColor": "rgba(173,38,186, 1)"
+      "id": 798932018359.1702,
+      "backgroundColor": "rgba(26,187,68, 0.8)",
+      "borderColor": "rgba(127,251,199, 1)"
     },
     {
       "name": "Google",
       "number": "300",
-      "id": 834336549572.4548,
-      "backgroundColor": "rgba(228,218,221, 0.8)",
-      "borderColor": "rgba(104,235,3, 1)"
+      "id": 781651279325.5856,
+      "backgroundColor": "rgba(151,196,39, 0.8)",
+      "borderColor": "rgba(65,78,93, 1)"
     }
   ]
 }
