@@ -34,8 +34,6 @@ const Chart = () => {
     ],
   };
 
-  console.log(fetchData.length);
-  
   return (
     <div className="mt-10 w-[520px]">
       <h1 className="topic">Wykres</h1>
